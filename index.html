@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Code Jam</title>
+<link href="/main.css" rel="stylesheet"></head>
+<body>
+<div class="root">
+    <div class="tools"></div>
+    <div id="frames" class="frames">
+        <button class="button_add_frame" id="button_add_frame">+ Add new frame</button>
+    </div>
+    <canvas id="draw_canvas" class="draw_canvas"></canvas>
+    <div class="animation_field" id="animation_field">
+        <canvas id="animation_canvas" class="animation_canvas"></canvas>
+        <div class="fps_container">
+            <label for="range" class="range_label">
+                <span class="current_range"></span>
+                <span class="fps_span">FPS</span>
+            </label>
+            <input type="range" class="input_range" id="range" name="fps" min="1" max="24" step="1">
+        </div>
+        <button class="full_screen" id="full_screen">Full Screen</button>
+    </div>
+</div>
+<script type="text/javascript" src="/bundle.js"></script></body>
+</html>
